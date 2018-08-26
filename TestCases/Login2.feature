@@ -1,0 +1,7 @@
+Feature: Login2
+
+Scenario: Authenication
+Given Open Application and Enter url
+When enter username 
+And  enter password
+

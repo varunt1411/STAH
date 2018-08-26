@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.cucumber.tests.MasterTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Testsdfdf">
+    <classes>
+      <class name="com.cucumber.tests.MasterTest2"/>
+    </classes>
+  </test> <!-- Testsdfdf -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.cucumber.tests.MasterTest2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.cucumber.tests.MasterTest2 -->
+      <class name="com.cucumber.tests.MasterTest">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.cucumber.tests.MasterTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Testsdfdf(failed)">
+    <classes>
+      <class name="com.cucumber.tests.MasterTest2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+          <include name="setup"/>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.cucumber.tests.MasterTest2 -->
+      <class name="com.cucumber.tests.MasterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.cucumber.tests.MasterTest -->
+    </classes>
+  </test> <!-- Testsdfdf(failed) -->
+</suite> <!-- Failed suite [Suite] -->
