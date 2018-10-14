@@ -20,7 +20,7 @@ public class DriverFactory {
 		
 		private void createNewDriverInstance() {
 			System.setProperty("webdriver.chrome.driver", ProjectPath + "BrowserDriver\\chromedriver_2.40.exe");
-			String browser = new PropertyReader().readProperty("browser");
+			//String browser = new PropertyReader().readProperty("browser");
 			driver = new ChromeDriver();
 		}
 		

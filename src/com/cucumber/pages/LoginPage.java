@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.cucumber.common.CommonSteps;
+
 import com.cucumber.common.DriverFactory;
 import com.cucumber.objects.LoginPageObjects;
 import com.cucumber.tests.MasterTest;
@@ -17,13 +17,13 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
  
  
-public class LoginPage extends CommonSteps 
+public class LoginPage extends DriverFactory 
 {
 	
 	
 	@Given("^Open Application and Enter url$")
 	public void open_Application_and_Enter_url() throws Throwable {
-	  driver.get("https://demo.openmrs.org/openmrs/login.html");
+		driver.get("https://demo.openmrs.org/openmrs/login.html");
 	  
 	}
  
